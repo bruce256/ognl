@@ -9,6 +9,8 @@ import ognl.Ognl;
 import ognl.OgnlContext;
 import ognl.OgnlException;
 
+import java.util.HashMap;
+
 public class OgnlTest {
 
 	public static void main(String[] args) throws OgnlException {
@@ -23,7 +25,7 @@ public class OgnlTest {
 		emp.setAge("22");
 
 		// 构建一个OgnlContext对象
-		OgnlContext context = new OgnlContext();
+		OgnlContext context = new OgnlContext(new HashMap());
 
 		// 将上述部门和员工对象放入Ognl上下文环境中
 		context.put("dept", dept);
