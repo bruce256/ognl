@@ -14,9 +14,9 @@ public class FelTest {
 	
 	public static void main(String[] args) {
 		List list = new ArrayList();
-		for(int i=0;i<10000; i++) {
+		for (int i = 0; i < 10000; i++) {
 			FelEngine felEngine = new FelEngineImpl();
-			list.add(felEngine);
+			//list.add(felEngine);
 		}
 		
 		System.out.println("end");
